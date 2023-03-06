@@ -20,3 +20,6 @@ export const removeTodo = ({ state }: Context, id: number) => {
     console.log("removeToDo")
 }
 
+export const loadUsers = async ({ state, effects }: Context) => {
+    state.todolist.users = await effects.todolist.getAllUsers()
+}

@@ -5,10 +5,12 @@ type Todo = {
 
 type State = {
     todos: Todo[],
-    newTodoTitle: string
+    newTodoTitle: string,
+    users: any[]
 }
 
 export const state: State = {
     todos: [],
-    newTodoTitle: ''
+    newTodoTitle: '',
+    users: []
 }
